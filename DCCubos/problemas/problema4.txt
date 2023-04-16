@@ -1,0 +1,83 @@
+tiempo(0..bound).
+bloque(b19).
+bloque(b11).
+bloque(b7).
+bloque(b5).
+bloque(b1).
+bloque(b3).
+bloque(b18).
+bloque(b16).
+bloque(b9).
+bloque(b10).
+bloque(b12).
+bloque(b8).
+bloque(b2).
+bloque(b4).
+bloque(b6).
+bloque(b20).
+bloque(b13).
+bloque(b17).
+bloque(b14).
+bloque(b15).
+lugar(mesa).
+lugar(b19).
+lugar(b11).
+lugar(b7).
+lugar(b5).
+lugar(b1).
+lugar(b3).
+lugar(b18).
+lugar(b16).
+lugar(b9).
+lugar(b10).
+lugar(b12).
+lugar(b8).
+lugar(b2).
+lugar(b4).
+lugar(b6).
+lugar(b20).
+lugar(b13).
+lugar(b17).
+lugar(b14).
+lugar(b15).
+sobre(b19,mesa,0).
+sobre(b11,b19,0).
+sobre(b7,b11,0).
+sobre(b5,b7,0).
+sobre(b1,b5,0).
+sobre(b3,b1,0).
+sobre(b18,b3,0).
+sobre(b16,b18,0).
+sobre(b9,b16,0).
+sobre(b10,b9,0).
+sobre(b12,b10,0).
+sobre(b8,b12,0).
+sobre(b2,b8,0).
+sobre(b4,b2,0).
+sobre(b6,b4,0).
+sobre(b20,b6,0).
+sobre(b13,b20,0).
+sobre(b17,b13,0).
+sobre(b14,b17,0).
+sobre(b15,b14,0).
+objetivo(T) :-
+    sobre(b11,b19,T),
+    sobre(b7,b11,T),
+    sobre(b5,b7,T),
+    sobre(b1,b5,T),
+    sobre(b3,b1,T),
+    sobre(b18,b3,T),
+    sobre(b16,b18,T),
+    sobre(b9,b16,T),
+    sobre(b10,b9,T),
+    sobre(b12,b10,T),
+    sobre(b8,b12,T),
+    sobre(b2,b8,T),
+    sobre(b4,b2,T),
+    sobre(b6,b4,T),
+    sobre(b20,b6,T),
+    sobre(b13,b20,T),
+    sobre(b17,b13,T),
+    sobre(b14,b17,T),
+    sobre(b15,b14,T),
+    sobre(b19,mesa,T).

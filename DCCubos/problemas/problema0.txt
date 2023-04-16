@@ -1,0 +1,135 @@
+tiempo(0..bound).
+bloque(b26).
+bloque(b7).
+bloque(b1).
+bloque(b14).
+bloque(b32).
+bloque(b28).
+bloque(b5).
+bloque(b20).
+bloque(b30).
+bloque(b6).
+bloque(b2).
+bloque(b31).
+bloque(b15).
+bloque(b23).
+bloque(b17).
+bloque(b22).
+bloque(b16).
+bloque(b3).
+bloque(b29).
+bloque(b12).
+bloque(b4).
+bloque(b9).
+bloque(b13).
+bloque(b24).
+bloque(b19).
+bloque(b10).
+bloque(b33).
+bloque(b25).
+bloque(b18).
+bloque(b21).
+bloque(b8).
+bloque(b27).
+bloque(b11).
+lugar(mesa).
+lugar(b26).
+lugar(b7).
+lugar(b1).
+lugar(b14).
+lugar(b32).
+lugar(b28).
+lugar(b5).
+lugar(b20).
+lugar(b30).
+lugar(b6).
+lugar(b2).
+lugar(b31).
+lugar(b15).
+lugar(b23).
+lugar(b17).
+lugar(b22).
+lugar(b16).
+lugar(b3).
+lugar(b29).
+lugar(b12).
+lugar(b4).
+lugar(b9).
+lugar(b13).
+lugar(b24).
+lugar(b19).
+lugar(b10).
+lugar(b33).
+lugar(b25).
+lugar(b18).
+lugar(b21).
+lugar(b8).
+lugar(b27).
+lugar(b11).
+sobre(b26,mesa,0).
+sobre(b7,b26,0).
+sobre(b1,b7,0).
+sobre(b14,b1,0).
+sobre(b32,b14,0).
+sobre(b28,b32,0).
+sobre(b5,b28,0).
+sobre(b20,b5,0).
+sobre(b30,b20,0).
+sobre(b6,b30,0).
+sobre(b2,b6,0).
+sobre(b31,b2,0).
+sobre(b15,b31,0).
+sobre(b23,b15,0).
+sobre(b17,b23,0).
+sobre(b22,b17,0).
+sobre(b16,b22,0).
+sobre(b3,b16,0).
+sobre(b29,b3,0).
+sobre(b12,b29,0).
+sobre(b4,b12,0).
+sobre(b9,b4,0).
+sobre(b13,b9,0).
+sobre(b24,b13,0).
+sobre(b19,b24,0).
+sobre(b10,b19,0).
+sobre(b33,b10,0).
+sobre(b25,b33,0).
+sobre(b18,b25,0).
+sobre(b21,b18,0).
+sobre(b8,b21,0).
+sobre(b27,b8,0).
+sobre(b11,b27,0).
+objetivo(T) :-
+    sobre(b7,b26,T),
+    sobre(b1,b7,T),
+    sobre(b14,b1,T),
+    sobre(b32,b14,T),
+    sobre(b28,b32,T),
+    sobre(b5,b28,T),
+    sobre(b20,b5,T),
+    sobre(b30,b20,T),
+    sobre(b6,b30,T),
+    sobre(b2,b6,T),
+    sobre(b31,b2,T),
+    sobre(b15,b31,T),
+    sobre(b23,b15,T),
+    sobre(b17,b23,T),
+    sobre(b22,b17,T),
+    sobre(b16,b22,T),
+    sobre(b3,b16,T),
+    sobre(b29,b3,T),
+    sobre(b12,b29,T),
+    sobre(b4,b12,T),
+    sobre(b9,b4,T),
+    sobre(b13,b9,T),
+    sobre(b24,b13,T),
+    sobre(b19,b24,T),
+    sobre(b10,b19,T),
+    sobre(b33,b10,T),
+    sobre(b25,b33,T),
+    sobre(b18,b25,T),
+    sobre(b21,b18,T),
+    sobre(b8,b21,T),
+    sobre(b27,b8,T),
+    sobre(b11,b27,T),
+    sobre(b26,mesa,T).
