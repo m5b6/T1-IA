@@ -5,7 +5,7 @@ lugar(mesa).
 
 %* ACA LAS PINZAS *%
 %* ACA LAS PINZAS *%
-0{ejecutar(X,Y,T) : movimientoposible(X,Y,T)}1%* aca *% :- tiempo(T), T!=bound.
+0{ejecutar(X,Y,T) : movimientoposible(X,Y,T)}3 %* aca *% :- tiempo(T), T!=bound.
 %* ACA LAS PINZAS *%
 %* ACA LAS PINZAS *%
 
@@ -28,6 +28,8 @@ bloquelibre(X,T) :- bloque(X), tiempo(T), not bloquetapado(X,T).
 
 movimientoposible(X,Y,T) :- bloquelibre(X,T), bloquelibre(Y,T), X!=Y, not sobre(X,Y,T).
 movimientoposible(X,mesa,T) :- bloquelibre(X,T), not sobre(X,mesa,T).
+
+#minimize{T : objetivo(T)}.
 
 :- not objetivo(bound).
 
